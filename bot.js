@@ -1,9 +1,8 @@
 const Discord = require("discord.js");
 const YTDL = require("ytdl-core");
-const TOKEN = "MzMwNzUwNTExODQwMjMxNDI3.DDm-Sw.myhKG-5nv1UF9PJd1PZtYrO_RpA"
-const PREFIX = "SM"
+const PREFIX = "skylsucks"
 const fs = require('fs');
-
+const settings = require("./settings.json");
 
 
 
@@ -123,4 +122,4 @@ bot.on("message", function(message) {
 });
 
 
-bot.login(TOKEN);
+bot.login(settings.token);
